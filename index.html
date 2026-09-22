@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./script.js"></script>
+
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="logo">David Ugwunnamuchi</a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="intro">Hello I'm</p>
+        <h1>David Ugwunnamuchi</h1>
+        <h2>Junior Web Developer</h2>
+        <p>
+          I build practical and interactive web applications while exploring the
+          world of modern web development.
+        </p>
+        <a href="#projects">View My Projects</a>
+      </div>
+      <div class="hero-image">
+        <img src="./images/profile.JPG" alt="David Ugwunnamuchi" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-content">
+        <p class="section-label">About Me</p>
+        <h2>Building, learning, and growing as a developer.</h2>
+        <p>
+          I'm a Junior Web Developer with a growing interest in building
+          practical and interactive applications. I enjoy turning ideas into
+          working projects and learning how different technologies work
+          together.
+        </p>
+        <p>
+          My current focus is on strengthening my JavaScript skills, learning
+          how APIs work, and gradually moving into modern frontend development.
+        </p>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="skills-content">
+        <p class="section-label">My Skills</p>
+        <h2>Technologies I worked with</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Programming</h3>
+            <ul>
+              <li>Python</li>
+              <li>C++</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Database</h3>
+            <ul>
+              <li>SQL</li>
+              <li>SQLite</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Tools and Technologies</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>PyQt</li>
+              <li>Raspberry Pi Pico</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="project-content">
+        <p class="section-label">My Projects</p>
+        <h2>Things I've Built</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="./images/hardware.jpg"
+                alt="OTP displayed on the Raspberry Pi Pico"
+              />
+              <img
+                src="./images/Software.jpg"
+                alt="OTP entered on the login page"
+              />
+            </div>
+            <div class="project-info">
+              <p class="project-type">Authentication System</p>
+              <h3>Hardware-Based OTP Authentication System</h3>
+              <p>
+                A hardware-based authentication system designed for
+                computer-based examinations. The system uses a Raspberry Pi Pico
+                to generate and display time-sensitive one-time passwords.
+              </p>
+              <ul class="project-tech">
+                <li>Python</li>
+                <li>PyQt5</li>
+                <li>SQLite</li>
+                <li>Raspberry Pi Pico</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">View My Projects</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="./images/input.jpg"
+                alt="input page on Mortgage Calculator"
+              />
+              <img
+                src="./images/result.jpg"
+                alt="result page on Mortgage Calculator"
+              />
+            </div>
+            <div class="project-info">
+              <p class="project-type">Javascript Project</p>
+              <h3>Mortgage Calculator</h3>
+              <p>
+                A JavaScript-based mortgage calculator that allows users to
+                enter loan information and calculate their estimated monthly
+                mortgage payment.
+              </p>
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">View My Project</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- <article class="project-card">
+            <div class="project-image">
+              <img src="" alt="" />
+            </div>
+            <div class="project-info">
+              <p class="project-type"></p>
+              <h3>Weather Dashboard</h3>
+              <p>
+                A web application that retrieves weather information from an
+                external API and displays current conditions for a selected
+                location.
+              </p>
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>API</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="#">GitHub</a>
+                <a href="#">View My Project</a>
+              </div>
+            </div>
+          </article> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-content">
+        <p class="section-label">Get In Touch</p>
+        <h2>Let's Build Something Together</h2>
+        <p>
+          I'm always interested in learning, building new projects, and
+          connecting with other developers. Feel free to reach out.
+        </p>
+        <a href="mailto:davidugwunnamuchi@gmail.com">Email Me</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 David Ugwunnamuchi. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
