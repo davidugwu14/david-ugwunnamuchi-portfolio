@@ -32,6 +32,15 @@ nav {
   font-weight: 700;
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #f8fafc;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -73,7 +82,7 @@ nav ul a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 70px;
   padding: 80px 8%;
 }
 
@@ -106,6 +115,7 @@ nav ul a:hover::after {
   max-width: 600px;
   color: #94a3b8;
   font-size: 1.1rem;
+  line-height: 1.6;
   margin-bottom: 35px;
 }
 
@@ -435,21 +445,48 @@ footer p {
   }
 
   nav {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 
   nav ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     gap: 18px;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+
+    position: relative;
+    z-index: 10;
+
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  nav ul.active {
+    max-height: 300px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    padding-top: 20px;
   }
 
   .hero {
     min-height: auto;
     flex-direction: column;
     gap: 40px;
-    padding: 80px 5%;
+    padding: 30px 5% 80px;
     text-align: center;
   }
 
@@ -484,8 +521,37 @@ footer p {
     grid-template-columns: 1fr;
   }
 
+  /* .project-links {
+    transition:
+      background-color 0.3 ease,
+      border-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  .project-links a:hover {
+    background: #38bdf8;
+    border-color: #38bdf8;
+    color: #0f172a;
+  } */
+
   .project-image {
     height: 280px;
+    display: flex;
+    padding: 10px;
+    /* flex-direction: column; */
+    overflow: hidden;
+    aspect-ratio: auto;
+  }
+
+  .project-image img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .project-image .software-image {
+    width: 65%;
+    transform: none;
   }
 
   .project-info {
